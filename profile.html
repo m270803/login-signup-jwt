@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        html,
+        body,
+        #map {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          height: 100vh;
+        }
+        </style>
+           <script src="https://apis.mappls.com/advancedmaps/api/bdcafac9a3a1abb04bde88559a4a9a0d/map_sdk?layer=vector&v=3.0&callback=initMap1" defer async></script>
+          </head>
+      <body>
+                  <div id="map"></div>
+                      <script>
+      var map;
+      function initMap1() {
+          map = new mappls.Map('map', {
+              center: [28.61, 77.23],
+              geolocation: true,
+              zoomControl: true
+          });
+      }
+  </script>
+</body>
+</html>
